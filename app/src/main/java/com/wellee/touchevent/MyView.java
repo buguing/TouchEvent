@@ -48,8 +48,8 @@ public class MyView extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Toast.makeText(getContext(), "MyView哈哈", Toast.LENGTH_SHORT).show();
-        // return super/false 向上回传事件
-        // return true 消费事件
+        // return false 向上回传事件
+        // return true/super 消费事件
         // 其次执行
         return super.onTouchEvent(event);
     }

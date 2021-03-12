@@ -25,7 +25,7 @@ public class MyLinearLayout extends LinearLayout {
     public boolean dispatchTouchEvent(MotionEvent ev) {
         // return true  事件结束
         // return false 调用Activity.onTouchEvent(ev);
-        // return super 调用this.onTouchEvent(ev);
+        // return super 调用this.onInterceptTouchEvent(ev);
         return super.dispatchTouchEvent(ev);
     }
 
